@@ -50,6 +50,14 @@ NOTE: ktest.sh may not work on your sytem if it Mac or Windows. Therefore I've p
     Note this may take A LOT OF TIME if you are executing ktest.sh for the first time on you system.
 
 - To test the kernel, use:
+  Before proceeding to the next step, you will have to enable virtualization on your system.
+  Follow these steps if you are using a VMWare:
+    1. Power off your machine.
+    2. Select your VM and go to 'Edit virtual machine settings'.
+    3. Select 'Processors' in the window popping up.
+    4. On the right side of the window, check a checkbox named 'Virtualize Intel xxx xxx'.
+    5. Click OK, and power on your machine.
+    
     ```
     ./ktest.sh test
     ```
